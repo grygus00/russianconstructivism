@@ -1,0 +1,235 @@
+/* *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+} */
+:root{
+    --white: #F5F5F5;
+    --red: #E94623;
+    --black: #1B1B1B;
+    --gray: #BCBCBC;
+}
+@font-face {
+    font-family: 'Russian';
+    src: url(Russian.ttf);
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+  /* filter: contrast(150%) brightness(800%); */
+    background: 
+linear-gradient(90deg, rgba(224, 201, 166,0.5), rgba(224, 201, 166,0.5)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+/* ***********************HEADER*********************** */
+header{
+    margin-bottom: 5vh;
+}
+.header_graphic{
+    min-width: 100vw !important;
+    margin: 0  !important;
+}
+ /* ***********************MAIN*********************** */
+main{
+    margin: auto;
+    width: 100vw !important;
+}
+
+/* ***********************TEXT*********************** */
+h1, h2{
+    font-family: 'Russian';
+    src: url(Russian.ttf);
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 1.4rem;
+}
+h1, h2, h3{
+    text-align: center;
+    margin: auto;
+    width: 90vw;
+    color: var(--black);
+}
+h3{
+    font-size: 1.3em;
+}
+p{
+    width: 80vw;
+    margin: 2em auto;
+    font-size: 18px;
+    color: var(--black);
+}
+.text{
+    width: 80vw;
+    margin: auto;
+}
+.circle{
+    position: relative;
+    bottom: 130px;
+    width: 80vw;
+    height: 80vw;
+    margin: auto;
+    background-color: var(--red);
+    border-radius: 50%;
+    z-index: -2;
+    margin-bottom: -150px;
+}
+.circle_p{
+    width: 66vw;
+    position: relative;
+    bottom: 165px;
+    text-align: center;
+    margin-bottom: -150px;
+
+}
+/* ***********************GUY*********************** */
+.russian_guy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    position: relative;
+}
+.left_text p{
+    width: 50vw;
+    text-align: center;
+    margin-left: 5vw;
+}
+.guy img{
+    width: 45vw;
+    max-width: 200px;
+    position: absolute;
+  top: 50%;
+  right: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* ***********************IMAGES*********************** */
+.smaller_img{
+    max-width: 80vw;
+}
+.double_img{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.double{
+    max-width: 38vw;
+    display: inline-block;
+
+}
+.header_graphic img{
+    width: 100vw !important;
+}
+
+/* ***********************SHAPES*********************** */
+.shape{
+    position: absolute;
+}
+.black_bg{
+    padding: 0.5em;
+    margin: auto;
+    width: 80vw;
+    background: var(--black);
+    box-shadow: 3px 2px 5px #1B1B1B;
+    margin-bottom: 1em;
+}
+.black_bg h3{
+    color: var(--white);
+    font-size: 1.3em;
+    width: 80vw;
+}
+.trapez{
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: var(--red);
+    transform: perspective(10px) rotateX(1deg);
+    margin: 50px;
+}
+svg{
+    z-index: -1;
+    position: absolute;
+}
+svg path{
+    fill: var(--red);
+}
+.elipse{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-color: var(--white);
+    z-index: -1;
+    right: 10px;
+    margin-top: -50px;
+}
+.ractangle{
+    margin-top: 60px;
+    width: 97vw;
+    height: 10vw;
+    background-color: var(--black);
+    transform: rotate(34deg);
+    z-index: -1;
+    right: 0;
+
+}
+.triangle{
+    width: 0;
+    height: 0;
+    margin-left: -100px;
+    border-left: 100vw solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid var(--red);
+    transform: rotate(130deg);
+    z-index: -1;
+    margin-top: 200px;
+}
+/* ***********************SPECIFICS*********************** */
+hr{
+    height: 3px;
+    background-color: var(--red);
+}
+.final{
+    background-color: var(--white);
+    width: 85vw;
+    padding: 0.3em;
+    margin: auto;
+}
+.final p{
+    color: var(--black);
+    width: 80vw;
+}
+footer{
+    background-color: var(--black);
+}
+.creator p{
+    margin-bottom: 0;
+    color: var(--white);
+    text-align: center;
+}
+.top{
+    position: fixed;
+    bottom: 0;
+    width: 0px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--white);
+    transform: scale(50%);
+}
+.top p{
+    position: absolute;
+    left: -17px;
+    top: 10px;
+
+    color: var(--black);
+    font-family: 'Russian';
+
+    font-size: 1.6em;
+    color: var(--black);
+}
